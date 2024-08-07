@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalizer.css">    
+    <link rel="stylesheet" href="styles.css">  
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  
+</head>
+<body>     
+    <main>
+        <section class="seccion1">
+            <img class="logo" src="img encriptador/Logo.png" alt="Logo Alura">
+
+            <textarea class="Texto" placeholder="   Ingrese el texto aquí"></textarea>
+            
+            
+                <div class="alert">            
+                <img class="icon-alert" src="img encriptador/Frame 1.svg" alt="alert">
+                    <p class="msj-alert">solo letras minúsculas y sin acento</p>           
+                </div>
+                
+                <div class="botones">
+                    <input class="encriptar" onclick="btnEncriptar()" type="button" value="Encriptar">
+                    <input class="desencriptar" onclick="btnDesencriptar()" type="button" value="Desencriptar">
+                </div> 
+            
+            
+        </section>
+
+        <section class="seccion2">
+            <div class="muñeco"> 
+                             
+                <img class="elmuñeco" src="img encriptador/Muñeco.png" alt="Imagen Muñeco"> 
+                                    
+                
+                <div class="text-resultado">           
+                    <h3>Ningún mensaje fue encontrado</h3>        
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+
+            </div>              
+
+            <div class="boton-copia hidden">
+                <input class="copia"type="button" value="Copiar">
+            </div>
+        </section>
+    </main> 
+    <script src="encriptador.js"></script> 
+</body>
+</html>
